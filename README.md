@@ -46,4 +46,5 @@ To start the back end, run the following command:
 ## License
 
 This project is licensed under the MIT License
+
 Happy coding!
