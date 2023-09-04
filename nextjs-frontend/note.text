@@ -1,0 +1,19 @@
+// filter out valid project options
+              // 2 callbacks
+              // 1) prevOptions is <previous> state of the setter
+              // 2) setting the new state 
+              setOptions(prevOptions => availableOptions.map(projectName => ({
+                  value: projectName,
+                  label: projectName
+                })));
+
+
+<section className='bg-custom-black py-8 px-24 md:mx-[5%] lg:mx-[15%] xl:mx-[25%] '>
+          <form className='w-full h-min flex flex-col gap-8 justify-center items-center'>
+              <div className='w-full px-8'>
+                  <p className='font-poppins py-3 text-sm md:text-base'>Please select all projects you are interested in:</p>
+                  <DropBox options={options} onSelect={handleSelect}/>
+              </div>
+              <button className='btn' onClick={handlePreSubmit}>Submit</button>
+          </form>
+        </section>
